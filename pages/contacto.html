@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Veterinaria Villa Dolores en Montevideo, Uruguay. Ofrecemos servicios veterinarios para mascotas tradicionales y exóticas, así como una tienda con productos especializados. Contáctanos para más información.">
+    <meta name="keywords"
+        content="veterinaria, veterinaria Montevideo, servicios veterinarios, mascotas, productos para mascotas, tienda veterinaria, veterinaria Villa Dolores">
+    <link rel="icon" href="../img/ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/fonts/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <title>:. Veterinaria Villa Dolores .:</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light sticky-top shadow-sm px-5">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logotipo.webp" alt="Logotipo veterinaria Villa dolores">
+            </a>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto main-nav">
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="somos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="servicio.html">Servicios</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link active fw-lighter" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a class="nav-link fw-lighter" href="#"><i class="fa fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="nav-item text-uppercase rounded-pill border-0 border-md border-success-subtle px-1">
+                        <a class="nav-link fw-lighter" href="#"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="d-flex flex-column align-items-center my-5">
+
+        <section class="contact container d-flex flex-column align-items-center">
+            <h1 class="fs-1 text-center mb-5">Contacto</h1>
+
+            <form action="" class="form-control d-flex flex-column p-5 shadow-lg mb-5 bg-white rounded">
+                <fieldset class="p-3 mb-5 border border-light">
+                    <legend class="fs-5">Información Personal</legend>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="name">Nombre:</label>
+                        <input class="form-control" type="text" name="name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="pet">Nombre de la mascota:</label>
+                        <input class="form-control" type="text" name="pet" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="type">Tipo de mascota:</label>
+                        <select class="form-select" name="type" aria-label="Large select example" required>
+                            <option selected disabled>Elegir un tipo</option>
+                            <option value="1">Perro</option>
+                            <option value="2">Gato</option>
+                            <option value="3">Exótico</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">¿Es socio?</label>
+                        <div class="d-flex gap-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="socio" value="Socio" id="socio"
+                                    required>
+                                <label class="form-check-label" for="socio">Socio</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="socio" value="NoSocio" id="Nosocio"
+                                    required>
+                                <label class="form-check-label" for="Nosocio">No Socio</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="p-3 mb-5 border border-light">
+                    <legend class="fs-5">Mensaje</legend>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="mensaje">Motivo de consulta:</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-lg btn-send">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+
+        <section class="container d-flex flex-wrap justify-content-between align-items-start mt-5 mb-5">
+
+            <div class="contact-info p-4 border border-light rounded shadow-sm mb-4 mb-md-0" style="flex: 1 1 100%;">
+                <h2 class="fs-4">Información de Contacto</h2>
+                <p><i class="fa-solid fa-location-dot"></i> Av. Rivera 3142, Montevideo, Uruguay</p>
+                <p><i class="fa-solid fa-phone"></i> Teléfono: 2622 8994</p>
+                <p><i class="fa-solid fa-envelope"></i> Correo: info@veterinariavilladolores.com</p>
+            </div>
+
+            <div class="map-container border border-primary" style="flex: 1 1 100%;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.688424752412!2d-56.15653088515586!3d-34.894080280386404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95aab3446d82a4d9%3A0xfbc8937817d010b2!2sAv.%20Gral.%20Rivera%203142%2C%2011300%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguay!5e0!3m2!1ses-419!2suy!4v1694695659289!5m2!1ses-419!2suy"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="mt-auto d-flex flex-wrap justify-content-between">
+        <div class="footer-block d-flex flex-column justify-content-around">
+            <div class="mb-4">
+                <img class="logo-footer" src="../img/logotipo.webp" alt="Logotipo veterinaria Villa dolores">
+            </div>
+            <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp; Av. Rivera 3142</p>
+            <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp; 2622 8994</p>
+            <p>Montevideo - Uruguay</p>
+            <p class="copy">Copyright &copy; 2024 - Veterinaria Villa Dolores</p>
+        </div>
+
+        <div class="footer-block d-flex align-items-center gap-3 p-5">
+            <form action="" class="w-100">
+                <fieldset class="d-flex flex-column">
+                    <label class="p-2">Suscríbete a nuestro newsletter:</label>
+                    <div class="d-flex">
+                        <input type="email" class="form-control" placeholder="Ingresar correo electrónico">
+                        <button class="btn btn-new ms-1">Enviar</button>
+                    </div>
+                    <a class="ms-2 mt-4 text-dark text-decoration-none" href="sitemap.html">Mapa del sitio</a>
+                </fieldset>
+            </form>
+        </div>
+
+        <ul class="footer-block redes d-flex gap-3">
+            <li>
+                <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="fa-brands fa-youtube fa-2x"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

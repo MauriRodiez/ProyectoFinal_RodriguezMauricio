@@ -1,0 +1,81 @@
+
+@mixin underlined-title($color) {
+    color: $color;
+    margin-bottom: 5%;
+    text-align: center;
+    text-decoration: underline 0.5px;
+    text-underline-offset: 5px;
+}
+
+@mixin text-center {
+    text-align: center;
+}
+
+// Button
+@mixin button-style(
+    $bg-color, $border-color, $text-color, $hover-bg, $hover-border, $hover-text
+    ) {
+    background-color: $bg-color;
+    border-color: $border-color;
+    color: $text-color;
+
+    &:hover {
+        background-color: $hover-bg;
+        color: $hover-text;
+        border-color: $hover-border;
+    }
+}
+
+@mixin underline-hover($offset) {
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: $offset;
+    }
+}
+
+@mixin hover-opacity {
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+
+@mixin section-padding($padding, $background) {
+    padding: $padding;
+    background-color: $background;
+}
+
+// Card
+@mixin recomend-card($border-color: $gray-soft, $border-radius: 15px, $card-width: 500px, $max-card-width: 600px) {
+    margin: 10% 0;
+
+    h2 {
+        @include underlined-title($blue-dark);
+    }
+
+    .card-recomend {
+        border: solid $border-color 1px;
+        border-radius: $border-radius;
+        max-width: $max-card-width;
+        width: $card-width;
+
+        @include hover-opacity;
+
+        img {
+            border-top-left-radius: $border-radius;
+            border-top-right-radius: $border-radius;
+        }
+
+        h3 {
+            color: $dark-gray;
+        }
+
+        p {
+            color: $gray;
+        }
+
+        .btn-card {
+            @include button-style($green-soft, $green-soft, $white, $white, $green-dark, $green-dark);
+        }
+    }
+}
