@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Toastify.js/1.11.2/Toastify.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cart.html">Carrito</a></li>
+            <li><a href="favorites.html">Favoritos</a></li>
+        </ul>
+    </nav>
+
+    <h1>Carrito de Compras</h1>
+    <div id="cart-container" class="item-container">
+        
+    </div>
+    <div id="total-container">
+        <p>Total: <span id="total-price">$0.00</span></p>
+        <button id="purchase-button" class="btn btn-add-cart">Comprar</button>
+        <button id="cancel-button" class="btn btn-favorite">Cancelar Compra</button>
+    </div>
+    <div id="discount-container" style="display:none;">
+        <p>¡Felicidades! Tienes un cupón de descuento por comprar productos de mujer.</p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Tu Tienda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.js"></script>
+    <script src="js/cart.js"></script> 
+</body>
+</html>
